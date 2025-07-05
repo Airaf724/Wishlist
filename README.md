@@ -49,7 +49,7 @@ Before running this application, make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <https://github.com/Airaf724/Wishlist>
+git clone <https://github.com/Airaf724/Wishlist.git>
 cd Wishlist
 ```
 
