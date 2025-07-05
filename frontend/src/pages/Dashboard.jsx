@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useWishlistStore } from "../store/wishlistStore";
 import WishlistCard from "../components/WishlistCard";
-import Navbar from "../components/Navbar";
 import { Plus } from "lucide-react";
 import CreateWishlistDialog from "../components/CreateWishlistDialog";
 
@@ -23,10 +22,8 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <Navbar />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <h2 className="text-2xl font-semibold mb-6">Your Wishlists</h2>
-
         {isLoading ? (
           <div className="text-center text-gray-500">Loading wishlists...</div>
         ) : error ? (

@@ -28,8 +28,8 @@ export const useAuthStore = create((set, get) => ({
 
       if (response?.data?.user) {
         set({
-          user: response.data.user,
-          isAuthenticated: true,
+          // user: response.data.user,
+          // isAuthenticated: true,
           isLoading: false,
         });
       } else {

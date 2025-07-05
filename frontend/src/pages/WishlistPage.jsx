@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useWishlistStore } from "../store/wishlistStore";
 import { useProductStore } from "../store/productStore";
 import { useAuthStore } from "../store/authStore";
-import Navbar from "../components/Navbar";
 import AddProductDialog from "../components/AddProductDialog";
 import InviteDialog from "../components/InviteDialog";
 import ProductCard from "../components/ProductCard";
@@ -94,7 +93,6 @@ const WishlistPage = () => {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-100 pb-24">
-        <Navbar />
         <div className="max-w-4xl mx-auto px-4 py-6">
           <div className="text-center py-12">
             <p className="text-gray-500 text-lg">Loading products...</p>
@@ -106,7 +104,6 @@ const WishlistPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 pb-24">
-      <Navbar />
       <div className="max-w-4xl mx-auto px-4 py-6">
         <div className="flex items-center justify-between mb-6 flex-wrap gap-2">
           <h2 className="text-2xl font-bold text-gray-800">

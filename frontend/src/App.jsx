@@ -13,6 +13,7 @@ import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
 import SignUpPage from "./pages/SignUpPage";
 import WishlistPage from "./pages/WishlistPage";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const { isAuthenticated, checkAuth, isCheckingAuth, user } = useAuthStore();
@@ -69,6 +70,7 @@ const App = () => {
 
   return (
     <Router>
+      <Navbar />
       <Routes>
         {/* Public Route: Login */}
         <Route
